@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="get">
+    <form action="resultados.html" method="get">
+        <h1>Formulario de postulación a empleo</h1>
         <fieldset>
             <legend>Información Personal</legend>
             <label for="name">Nombre</label>
@@ -16,8 +17,110 @@
             <input type="text" name="lastname" id="lastname" required>
             <br><br>
             <label for="birthdate">Fecha de nacimiento</label>
-            <input type="date" required>
+            <input type="date" name="birthdate" id="birthdate" required>
+            <br><br>
+            <span>Género</span>
+            <br>
+            <input type="radio" name="gender" id="man" value="H" required>
+            <label for="man">Hombre</label>
+            <br>
+            <input type="radio" name="gender" id="woman" value="M" required>
+            <label for="woman">Mujer</label>
+            
         </fieldset>
+        <br>
+        <fieldset>
+            <legend>Información de Contacto</legend>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" required>
+            <br><br>
+            <label for="phonenumber">Número de teléfono</label>
+            <input type="number" id="phonenumber">
+            <br><br>
+            <label for="address">Dirección</label>
+            <br>
+            <textarea name="address" id="address" cols="50" rows="5" required></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Presentación Profesional</legend>
+            <label for="aboutyou">Cuéntenos sobre usted</label><br>
+            <textarea name="aboutyou" id="aboutyou" cols="65" rows="5" required></textarea>
+            <br><br>
+            <span>Nivel de estudio alcanzado</span>
+            <br>
+            <label for="primaria">
+                <input type="radio" name="studies" id="primaria" value="Primaria" required>
+                Primaria
+            </label>
+            <br>
+            <label for="secundaria">
+                <input type="radio" name="studies" id="secundaria" value="Secundaria" required>
+                Secundaria
+            </label>
+            <br>
+            <label for="universitario">
+                <input type="radio" name="studies" id="universitario" value="Universitario" required>
+                Universitario
+            </label>
+            <br>
+            <label for="posgrado">
+                <input type="radio" name="studies" id="posgrado" value="Posgrado" required>
+                Posgrado
+            </label>
+            <br><br>
+            <span>Lenguajes en los que posee conocimiento</span>
+            <br>
+            <label for="javascript">
+                <input type="checkbox" name="codelanguages" id="javascript" value="JavaScript">
+                JavaScript
+            </label>
+            <br>
+            <label for="HTML">
+                <input type="checkbox" name="codelanguages" id="HTML" value="HTML">
+                HTML
+            </label>
+            <br>
+            <label for="css">
+                <input type="checkbox" name="codelanguages" id="css" value="CSS">
+                CSS
+            </label>
+            <br>
+            <label for="php">
+                <input type="checkbox" name="codelanguages" id="php" value="PHP">
+                PHP
+            </label>
+            <br>
+            <label for="nodejs">
+                <input type="checkbox" name="codelanguages" id="nodejs" value="NodeJS">
+                NodeJS
+            </label>
+            <br>
+            <label for="phyton">
+                <input type="checkbox" name="codelanguages" id="phyton" value="Python">
+                Python
+            </label>
+            <br>
+            <label for="c#">
+                <input type="checkbox" name="codelanguages" id="c#" value="C#">
+                C#
+            </label>
+            <br><br>
+            <label for="favlanguagecode">Selecciona un lenguaje favorito</label>
+            <select name="favcodelanguage" id="favlanguagecode">
+                <option value="JavaScript" selected>JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+            </select>
+
+        </fieldset>
+        <br>
+        <label for="termsandconditions">
+            <input type="checkbox" name="termsandconditions" id="termsandconditions" required>
+            Acepto los Terminos y Condiciones
+        </label>
+        <br><br>
+        <button type="submit">Registrarse</button>
     </form>
 </body>
 </html>
